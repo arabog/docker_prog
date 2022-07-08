@@ -23,7 +23,6 @@ lint: Dockerfile app.py
     	#sudo chmod +x /bin/hadolint
 	
 	docker run --rm -i hadolint/hadolint < Dockerfile
-	
     
 	# This is linter for Dockerfiles
 	hadolint Dockerfile
