@@ -19,11 +19,9 @@ run-circleci-local:
 
 lint: Dockerfile app.py
 	# See local hadolint install instructions:   https://github.com/hadolint/hadolint
-	#sudo wget -O /bin/hadolint https://github.com/hadolint/hadolint/releases/download/v1.16.3/hadolint-Linux-x86_64 &&\
-    	#sudo chmod +x /bin/hadolint
+	sudo wget -O /bin/hadolint https://github.com/hadolint/hadolint/releases/download/v1.16.3/hadolint-Linux-x86_64 &&\
+    	sudo chmod +x /bin/hadolint
 	
-	sudo wget https://github.com/hadolint/hadolint/releases/download/v1.16.3/hadolint-Linux-x86_64
-	sudo chmod +x /bin/hadolint
     
 	# This is linter for Dockerfiles
 	hadolint Dockerfile
