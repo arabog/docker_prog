@@ -22,7 +22,7 @@ lint: Dockerfile app.py
 	#sudo wget -O /bin/hadolint https://github.com/hadolint/hadolint/releases/download/v1.16.3/hadolint-Linux-x86_64 &&\
     	#sudo chmod +x /bin/hadolint
 	
-	sudo wget -O /bin/hadolint https://github.com/hadolint/hadolint/releases/download/v1.16.3/hadolint-Linux-x86_64
+	sudo wget -O https://github.com/hadolint/hadolint/releases/download/v1.16.3/hadolint-Linux-x86_64
     
 	# This is linter for Dockerfiles
 	hadolint Dockerfile
